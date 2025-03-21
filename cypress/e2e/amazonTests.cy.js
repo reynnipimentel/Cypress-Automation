@@ -12,16 +12,16 @@ describe('template spec', () => {
     login.loginUser();
   })
 
-  it.skip('Cambiar nombre del propietario de la cuenta', () => {
+  it('Cambiar nombre del propietario de la cuenta', () => {
     config.changeName();
     cy.get(config.labelAlertName).should('have.text','Nombre actualizado. ')
   })
 
-  it.skip('Agregar la dirección de entrega de la cuenta', () => {
+  it('Agregar la dirección de entrega de la cuenta', () => {
     config.addAddress();
     cy.get(config.labelAlertAddress).should('have.text','Dirección guardada')
   })
-  it.skip('Editar la dirección de entrega de la cuenta', () => {
+  it('Editar la dirección de entrega de la cuenta', () => {
     config.editInformation();
     cy.get(config.labelAlertEdition).should('have.text','Dirección guardada')
   })

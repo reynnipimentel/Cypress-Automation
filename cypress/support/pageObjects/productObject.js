@@ -21,7 +21,7 @@ class ProductPage {
         util.clickElement(this.selectionProduct)
         util.clickElement(this.productColor)
         util.clickElement(this.productGiga)
-        // cy.wait(2000)
+        cy.wait(2000)
         util.clickElement(this.btnCart)
     }
 }
