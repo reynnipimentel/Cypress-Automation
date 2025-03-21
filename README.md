@@ -19,6 +19,18 @@ La lista de dependencias es:
 - [@faker-js/faker](https://www.npmjs.com/package/@faker-js/faker)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 
+### Configuración del archivo .env
+
+Antes de ejecutar las pruebas, asegúrate de crear un archivo .env en la raíz del proyecto con las siguientes variables:
+
+```env
+USUARIO="ejemplo@gmail.com"
+CONTRASENA="ejemplo"
+URL="https://ejemplo.com/"
+```
+
+Este archivo se usa para almacenar credenciales y configuraciones sensibles. No lo compartas ni lo subas al repositorio.
+
 ### Correr pruebas
 
 **Usando UI de Cypress**
